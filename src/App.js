@@ -1,24 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Filtro from "./components/Filtro";
+import Carrinho from "./components/Carrinho"
+import logo from "./img/logoLab.png"
+import CardProduto from './components/CardProduto';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='Header'>
+      <img src={logo}/>
+      </div>
+
+      <div> <Filtro /> </div>
+      <div className='Produtos'> 
+          <div> <CardProduto /> </div>
+          <div> B </div>
+          <div> C </div>
+
+          <div> D </div>
+          <div> E </div>
+          <div> F </div>
+
+          <div> G </div>
+          <div> <CardProduto /> </div>
+          <div> I </div>
+      </div>
+      <div> <Carrinho /> </div>
     </div>
   );
 }
