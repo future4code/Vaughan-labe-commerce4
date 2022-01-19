@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import Filtro from "./components/Filtro";
 import Carrinho from "./components/Carrinho"
-import logo from "./img/logoLab.png"
 import CardProduto from './components/CardProduto';
 
 
