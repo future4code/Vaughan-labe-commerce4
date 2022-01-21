@@ -1,7 +1,7 @@
 .App {
   display: grid;
   grid-template-columns: 20% 60% 20%;
-  grid-template-rows: 10vh 90vh;
+  grid-template-rows: 10vh 210vh;
   grid-row: 2 / 3;
   text-align: center;
   background-image: linear-gradient(180deg, #facc8c, #ffa550);
@@ -23,20 +23,62 @@
 .Produtos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows:33,33% 33,33% 33,33%;
+  grid-template-rows:5% 30% 30% 30%;
   text-align: center;
   align-items: center;
   border: 1px solid;
   border-radius: 5%;
-  height: 70%;
+  height: 190vh;
+  padding-top: 100px;
+  padding-left: 70px;
+}
+
+.Selecione-opcao{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Selecione-opcao> p{
+  margin-right: 20px;
 }
 
 .Card {
-  border: 1px solid;
   border-radius: 3%;
-  height: 100px;
-
+  height: 500px;
+  width: 400px;
+  box-shadow: 1px 10px 20px rgba(0, 0, 0, .4);
+  background-color: white;
 }
 .Card> img {
-  width: 200px;
+  width: 400px;
+  height: 300px;
+
+}
+
+.Card-button{
+  display: flex;
+  flex-direction: column;
+}
+
+.Card-button> span{
+  margin-bottom: 10px;
+}
+
+.Card-button> button{
+  width: fit-content;
+  margin: auto;
+  padding: 10px 25px;
+  border: none;
+  color: white;
+  background-color: rgb(180, 97, 65);
+  border-radius: 6px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, .4);
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.Card-button> button:hover{
+  color: black;
+  background-color: rgb(250, 208, 191);
 }

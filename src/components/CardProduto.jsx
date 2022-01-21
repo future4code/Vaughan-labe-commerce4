@@ -1,15 +1,21 @@
 import React from 'react';
-// import xbox from "./img/xbox.jpeg"
 
-const CardProduto = () => {
+const CardProduto = props => {
     return(
 
         <div className='Card'>
-            {/* <img src={xbox} /> */}
-            <p> Produto tal </p> 
-            
+
+            <img src={props.imagem} />
+            <h3> {props.nome} </h3> 
+
+            <div className='Card-button'>
+                
+                <span>R$ {props.preco} </span> 
+                <button >Adicionar ao carrinho</button>
+
+            </div>
         </div>
     )
 }
 
-export default CardProduto
+export default CardProduto;
