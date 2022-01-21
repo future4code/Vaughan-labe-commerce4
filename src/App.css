@@ -5,6 +5,7 @@
   grid-row: 2 / 3;
   text-align: center;
   background-image: linear-gradient(180deg, #facc8c, #ffa550);
+  
 }
 
 .Header {
@@ -22,21 +23,76 @@
 
 .Produtos {
   display: grid;
+  grid-gap: 15px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows:33,33% 33,33% 33,33%;
   text-align: center;
   align-items: center;
-  border: 1px solid;
+  border: none;
   border-radius: 5%;
   height: 70%;
+  padding: 15px;
 }
 
 .Card {
-  border: 1px solid;
-  border-radius: 3%;
-  height: 100px;
+  border: none;
+  padding: 5px;
+  border-radius: 6%;
+  height: 450px;
+  background-color: white;
+  -webkit-box-shadow: 4px 4px 13px -6px #000000; 
+  box-shadow: 4px 4px 13px -6px #000000;
 
 }
+
 .Card> img {
-  width: 200px;
+  width: 190px;
+  padding: 0;
 }
+
+.Card> button {
+  border: none;
+  color: white;
+  border-radius: 20%;
+  background-color: rgb(250, 128, 28);
+  height: 30px;
+  width: 190px;
+  -webkit-box-shadow: 4px 4px 13px -6px #000000; 
+  box-shadow: 4px 4px 13px -6px #000000;
+}
+
+.Card> button:hover {
+  border: none;
+  color: white;
+  border-radius: 20%;
+  background-color: rgb(248, 146, 62);
+  height: 32px;
+  width: 200px;
+  -webkit-box-shadow: 3px 3px 10px -5px #000000; 
+  box-shadow: 3px 3px 12px -5px #000000;
+}
+
+.Card> button:active {
+  border: none;
+  color: white;
+  border-radius: 20%;
+  background-color: rgb(168, 168, 168);
+  height: 32px;
+  width: 200px;
+  -webkit-box-shadow: 3px 3px 10px -5px #000000; 
+  box-shadow: 3px 3px 12px -5px #000000;
+}
+
+.Car> button{
+  width: 220px;
+  height: 50px;
+  border-radius: 20%;
+  background-color: rgb(250, 128, 28);
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  border: none;
+  -webkit-box-shadow: 3px 3px 10px -5px #000000; 
+  box-shadow: 3px 3px 12px -5px #000000;
+}
+

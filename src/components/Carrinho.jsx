@@ -1,16 +1,36 @@
 import React from 'react';
+import { ConjuntoDoCarrinho } from "./estiloDoCarrinho";
+import Itens from './Itens/Itens';
 
-const Carrinho = () => {
-    return(
+class Carrinho extends React.Component {
+    
+    render () {
 
-        <div>
+        const itensDoCarrinho = 
+            this.props.carrinho &&
+            this.props.carrinho.map((item) => {
+                
+        return(
+            <itens key={item.id}
+            quantidade={item.quantidade}
+            nome={item.name}
+            onclick={() => this.props.removerItemDoCarrinho(item)}
+
+            />
+        );
+    });
+
+    return (
+        <ConjuntoDoCarrinho>
 
             <h2> Carrinho </h2>
+            <div> {itensDoCarrinho} </div>
+            <p> Valor total: R$ {this.props.valorTotal},00 </p>
 
-
-            <p> Valor total: R$</p>
-        </div>
-    )
+        </ConjuntoDoCarrinho>
+        );
+    }   
 }
+
 
 export default Carrinho;
