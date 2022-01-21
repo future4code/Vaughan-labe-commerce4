@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Filtro from "./components/Filtros";
 import Carrinho from "./components/Carrinho"
+<<<<<<< HEAD
 import logo from "./img/logoLab.png"
 import Xbox from "./img/xbox.jpg";
 import Foguete from "./img/foguete.jpg";
@@ -12,6 +13,8 @@ import Trek from "./img/trek.jpg";
 import Principe from "./img/principe.webp";
 import R2 from "./img/R2.png";
 import Gigantes from "./img/gigantes.jpg";
+=======
+>>>>>>> master
 
 
 class App extends React.Component{
