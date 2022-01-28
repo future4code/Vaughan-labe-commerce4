@@ -1,38 +1,74 @@
 .App {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 10vh 210vh;
+  grid-row: 2 / 3;
   text-align: center;
+  background-image: linear-gradient(180deg, #FACC8C, #FFA550);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Header {
+  display: grid;
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+  background-color: #FCD6A1;
+  justify-content: center;
+  align-items: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Header> img {
+  width: 150px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Produtos {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows:5% 30% 30% 30%;
+  text-align: center;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 5%;
+  height: 190vh;
+  padding-top: 100px;
+  padding-left: 70px;
+}
+.Selecione-opcao{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Selecione-opcao> p{
+  margin-right: 20px;
+}
+.Card {
+  border-radius: 3%;
+  height: 500px;
+  width: 400px;
+  box-shadow: 1px 10px 20px rgba(0, 0, 0, .4);
+  background-color: white;
+}
+.Card> img {
+  width: 400px;
+  height: 300px;
+}
+.Card-button{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.Card-button> span{
+  margin-bottom: 10px;
+}
+.Card-button> button{
+  width: fit-content;
+  margin: auto;
+  padding: 10px 25px;
+  border: none;
   color: white;
+  background-color: rgb(180, 97, 65);
+  border-radius: 6px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, .4);
+  cursor: pointer;
+  margin-top: 10px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Card-button> button:hover{
+  color: black;
+  background-color: rgb(250, 208, 191);
 }
